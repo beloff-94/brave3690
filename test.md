@@ -5,71 +5,55 @@
 Привет мы пробуем работу с удаленным репозиторием =)
 
 ## Клонирование удаленного репозитория:
-bash
-Copy code
+
 git clone https://github.com/username/repository.git
 Эта команда создаст локальную копию удаленного репозитория на вашем компьютере.
 
 ## Просмотр удаленных репозиториев:
 
-bash
-Copy code
 git remote -v
 Эта команда отобразит список удаленных репозиториев, связанных с вашим локальным репозиторием.
 
 ## Добавление нового удаленного репозитория:
 
-bash
-Copy code
 git remote add название_удаленного origin https://github.com/username/new_repository.git
 
 ## Отправка изменений на удаленный репозиторий (push):
 
-bash
-Copy code
 git push название_удаленного название_ветки
+
 Пример:
 
-bash
-Copy code
 git push origin master
 
 ## Получение изменений с удаленного репозитория (pull):
-bash
-Copy code
+
 git pull название_удаленного название_ветки
+
 Пример:
 
-bash
-Copy code
 git pull origin master
 
 ## Получение списка удаленных веток:
-bash
-Copy code
+
 git branch -r
 
 ## Удаление удаленной ветки:
-bash
-Copy code
+
 git push название_удаленного :название_ветки
+
 Пример:
 
-bash
-Copy code
 git push origin :feature_branch
 
 ## Просмотр информации о удаленных репозиториях:
-bash
-Copy code
+
 git remote show название_удаленного
 
 ## Переключение между удаленными ветками:
-bash
-Copy code
+
 git checkout -b название_локальной_ветки origin/название_удаленной_ветки
 
 ## Обновление списка веток из удаленного репозитория:
-bash
-Copy code
+
 git fetch название_удаленного
